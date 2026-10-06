@@ -25,3 +25,13 @@ Cada lab debe documentar:
 Prefiere cambios pequeños y verificables. Actualiza el README del área cuando cambie la taxonomía.
 
 Antes de publicar cambios estructurales, compara siempre el estado local con `origin/main`, verifica la estructura resultante y confirma que los hashes local y remoto coincidan después del push.
+
+## Alcance de escritura autorizado
+
+Este contrato aplica exclusivamente a `C:\Users\Rober\projects\Google-Cloud`, correspondiente al repositorio `RobertMX23/google-cloud-engineering-lab`.
+
+- Solo se permite crear, editar, mover o eliminar archivos dentro de este repositorio.
+- Solo se permite hacer `commit` y `push` a este repositorio y a su remoto `origin`.
+- No se deben modificar otros chats, repositorios, workspaces, ramas o remotos.
+- Los archivos fuera de este repositorio solo pueden leerse cuando sea necesario para la tarea; no deben escribirse.
+- Si una solicitud requiere escribir fuera de este alcance, debe detenerse y solicitar autorización explícita.
