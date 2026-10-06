@@ -1,6 +1,6 @@
 # Plan diario de estudio y trabajo: CareOps Cloud + CDL → ACE → PCA
 
-**Versión:** \`1.1.0\`  
+**Versión:** \`1.2.0\`
 **Inicio recomendado:** Semana 1  
 **Duración total:** 42 semanas  
 **Carga estimada:** 679 horas  
@@ -20,13 +20,15 @@ CareOps Cloud será el proyecto transversal principal. Online Boutique, \`micros
 | Laptop workstation | gcloud, Terraform, Docker, Git, documentación, notebooks, diagramas y pruebas locales | Preparar y validar localmente antes de consumir GCP |
 | Repositorio | Notas, código, evidencia, decisiones y estado de ejecución | Registrar cada lab con objetivo, costo, validación y limpieza |
 | CareOps Cloud | Hilo conductor de negocio, implementación y arquitectura | Cada fase debe producir una demo, decisión o evidencia reutilizable |
+| Banco CDL 2026 | 96 preguntas, taxonomía y sesiones aleatorias | Usar `01-cloud-digital-leader/CDL_QUESTION_BANK_2026.yaml`; no revelar respuestas antes del intento |
 
 ## 2. Jornada semanal estándar
 
 ### CDL — 10.5 horas por semana
 
-- Lunes a viernes: \`1.5 h/día\` — teoría, guía de examen y Google Skills.
-- Sábado: \`3 h\` — laboratorio corto, resumen y preguntas de práctica.
+- Lunes a jueves: \`1.5 h/día\` — teoría, guía de examen y Google Skills.
+- Viernes: \`1.5 h\` — preguntas por dominio, revisión de errores y tarjetas de conceptos.
+- Sábado: \`3 h\` — laboratorio corto, simulacro o sesión de preguntas calificadas.
 - Domingo: descanso.
 
 ### ACE — 16 horas por semana
@@ -49,14 +51,28 @@ CareOps Cloud será el proyecto transversal principal. Online Boutique, \`micros
 
 | Semana | Tema | Lunes–viernes | Sábado | Evidencia mínima |
 |---:|---|---|---|---|
-| 1 | CareOps business case | 7.5 h de guía y Google Skills | 3 h de mapa de actores y proceso manual | Caso B2B2C, problema, KPIs, riesgos y alcance V0 |
-| 2 | Datos del cuidado | 7.5 h de BigQuery, Looker y datos | 3 h de BigQuery con Python | Modelo de caregiver, adulto mayor, visita, evento y alerta |
-| 3 | IA responsable | 7.5 h de IA, Gemini y agentic AI | 3 h de un notebook Gemini | Límites: coordinación, no diagnóstico; riesgos y consentimiento |
-| 4 | Modernización | 7.5 h de compute, contenedores y serverless | 3 h de arquitectura de modernización | Matriz IaaS/PaaS/CaaS/serverless |
-| 5 | Confianza y seguridad | 7.5 h de IAM, seguridad, privacidad y cumplimiento | 3 h de caso de responsabilidad compartida | Decisión de seguridad para un caso empresarial |
-| 6 | Operaciones y examen | 7.5 h de repaso y preguntas | 3 h de simulacro y brechas | Checklist CDL + pitch de CareOps de 5 minutos |
+| 1 | CareOps business case | 6 h de guía y Google Skills + 1.5 h CDL-001–016 | 3 h: sesión de 10 preguntas | Caso B2B2C, problema, KPIs, riesgos y alcance V0 |
+| 2 | Datos del cuidado | 6 h de BigQuery, Looker y datos + 1.5 h CDL-017–032 | 3 h: sesión de 10 preguntas | Modelo de caregiver, adulto mayor, visita, evento y alerta |
+| 3 | IA responsable y agentes | 6 h de IA, Gemini y agentic AI + 1.5 h CDL-033–048 | 3 h: sesión de IA de 12 preguntas | Límites: coordinación, no diagnóstico; riesgos y consentimiento |
+| 4 | Modernización | 6 h de compute, contenedores y serverless + 1.5 h CDL-049–064 | 3 h: sesión de 10 preguntas | Matriz IaaS/PaaS/CaaS/serverless |
+| 5 | Confianza y seguridad | 6 h de IAM, seguridad, privacidad y cumplimiento + 1.5 h CDL-065–080 | 3 h: sesión de seguridad de 12 preguntas | Decisión de seguridad para un caso empresarial |
+| 6 | Operaciones y examen | 6 h de repaso y preguntas + 1.5 h CDL-081–096 | 3 h: simulacro de 50–60 preguntas y análisis | Checklist CDL + pitch de CareOps de 5 minutos |
 
 **Salida de fase:** completar el Learning Path CDL, revisar las seis áreas, resolver preguntas de práctica y programar el examen cuando el simulacro sea consistente.
+
+### Protocolo de práctica CDL
+
+Cada sesión debe sortear preguntas del banco canónico respetando la taxonomía definida en `CDL_QUESTION_TAXONOMY_2026.md`.
+
+| Sesión | Cuándo | Tamaño | Resultado mínimo |
+|---|---|---:|---:|
+| Diagnóstico | Inicio de semana 1 | 10 | Registrar línea base, sin criterio de aprobación |
+| Dominio | Viernes de cada semana | 10–16 | 80% por dominio antes de cerrar la semana |
+| IA y agentes | Semana 3 y repaso final | 12 | 80% y explicación de riesgos, tools y aprobación humana |
+| Completa | Sábado de semana 6 | 50–60 | 80% global y ningún dominio por debajo de 70% |
+| Recuperación | Cuando un dominio falle | 10 | Repetir solo errores y conceptos relacionados |
+
+Para cada intento se registra fecha, tamaño, IDs sorteados, aciertos, porcentaje, dominios débiles y siguiente acción. El resultado no se considera evidencia de aprobación oficial; es un control interno de preparación.
 
 ## 4. Fase 2 — Associate Cloud Engineer
 
