@@ -183,3 +183,16 @@ Antes de incorporar o descargar un recurso se debe verificar su URL, título, pr
 El plan operativo de estudio y práctica está definido en [`STUDY_EXECUTION_PLAN.md`](STUDY_EXECUTION_PLAN.md). Ese documento convierte la matriz de recursos en una secuencia de 42 semanas con carga diaria, objetivos semanales, evidencias y controles de costo para Google Skills, GCP Pay Per Use y workstation local.
 
 El plan no cambia la clasificación del repositorio: solo define cuándo y cómo se ejecuta cada recurso. Los estados de avance deben mantenerse en sincronía con `RESOURCE_REGISTRY_v0.1.yaml`.
+
+## 10. Proyecto transversal Digital Twin
+
+El proyecto integral B2E + B2B + B2C está definido en [`shared/digital-twin-platform/PROJECT_CHARTER.md`](shared/digital-twin-platform/PROJECT_CHARTER.md). Es un proyecto aplicado transversal, no una cuarta certificación.
+
+Su arquitectura combina:
+
+- Google ADK para agentes, herramientas, workflows, evaluación y orquestación;
+- NVIDIA Nemotron/NIM para inferencia acelerada y modelos especializados;
+- Google Cloud para datos, eventos, APIs, seguridad, observabilidad y operación;
+- GCP GPU/GKE únicamente cuando el benchmark justifique el costo y la capacidad requerida.
+
+El charter debe mantenerse alineado con este contrato, el registro de recursos y el plan de ejecución. La selección exacta del modelo Nemotron queda abierta hasta completar benchmark de calidad, latencia, costo, memoria, seguridad y licencia.
