@@ -177,3 +177,9 @@ La prioridad se interpreta así:
 El registro distingue entre el estado del vínculo (`resource_status`) y el avance de estudio o ejecución (`execution_status`). No se debe marcar un recurso como completado solo por haber guardado su URL.
 
 Antes de incorporar o descargar un recurso se debe verificar su URL, título, propietario y señales de vigencia. Si el vínculo no puede verificarse, debe marcarse como `LINK_REVIEW_REQUIRED` y no se debe inventar una URL alternativa.
+
+## 9. Plan de ejecución
+
+El plan operativo de estudio y práctica está definido en [`STUDY_EXECUTION_PLAN.md`](STUDY_EXECUTION_PLAN.md). Ese documento convierte la matriz de recursos en una secuencia de 42 semanas con carga diaria, objetivos semanales, evidencias y controles de costo para Google Skills, GCP Pay Per Use y workstation local.
+
+El plan no cambia la clasificación del repositorio: solo define cuándo y cómo se ejecuta cada recurso. Los estados de avance deben mantenerse en sincronía con `RESOURCE_REGISTRY_v0.1.yaml`.
