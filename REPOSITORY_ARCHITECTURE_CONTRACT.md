@@ -5,6 +5,8 @@
 **Alcance:** todo el repositorio `RobertMX23/google-cloud-engineering-lab`  
 **Versión:** `1.0.0`
 
+El registro normativo de recursos y vínculos es [`RESOURCE_REGISTRY_v0.1.yaml`](RESOURCE_REGISTRY_v0.1.yaml).
+
 ## 1. Propósito
 
 Este documento es la fuente de verdad para la arquitectura, distribución y clasificación de los recursos del repositorio. Toda incorporación, reorganización o automatización debe respetar este contrato.
@@ -150,3 +152,28 @@ No se considera completado un cambio publicado hasta que el hash local y el remo
 ## 7. Evolución del contrato
 
 Los cambios a la arquitectura requieren actualizar este documento, el README del área afectada y, cuando aplique, `AGENTS.md`. Las nuevas certificaciones deben incorporarse como una decisión explícita; no deben mezclarse silenciosamente en CDL, ACE o PCA.
+
+## 8. Registro de vínculos y recursos
+
+`RESOURCE_REGISTRY_v0.1.yaml` es el registro canónico de los vínculos de aprendizaje, documentación, codelabs, repositorios, notebooks y programas formativos asociados al proyecto.
+
+Cada registro debe contener como mínimo:
+
+- `certification` — `CDL`, `ACE` o `PCA`;
+- `exam_section` — área primaria del blueprint;
+- `priority` — `P0`, `P1` o `P2`;
+- `resource_type` — tipo de recurso;
+- `name` y `url` — identidad y vínculo externo;
+- `repo_path` — ubicación prevista en el repositorio;
+- `resource_status` — vigencia o necesidad de revisión;
+- `execution_status` — avance práctico del recurso.
+
+La prioridad se interpreta así:
+
+- `P0`: recurso canónico y de ejecución prioritaria;
+- `P1`: recurso importante de apoyo o profundización;
+- `P2`: recurso complementario, opcional o de terceros.
+
+El registro distingue entre el estado del vínculo (`resource_status`) y el avance de estudio o ejecución (`execution_status`). No se debe marcar un recurso como completado solo por haber guardado su URL.
+
+Antes de incorporar o descargar un recurso se debe verificar su URL, título, propietario y señales de vigencia. Si el vínculo no puede verificarse, debe marcarse como `LINK_REVIEW_REQUIRED` y no se debe inventar una URL alternativa.

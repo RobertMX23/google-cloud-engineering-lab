@@ -1,0 +1,400 @@
+registry:
+  id: RESOURCE-REGISTRY-001
+  version: 0.1.0
+  status: ACTIVE
+  contract: RAC-001
+  repository: RobertMX23/google-cloud-engineering-lab
+  last_verified: 2026-10-05
+  status_values:
+    - NOT_STARTED
+    - IN_PROGRESS
+    - COMPLETED
+    - EVIDENCE_CAPTURED
+  resource_status_values:
+    - PLANNED
+    - ACTIVE
+    - ARCHIVED
+    - LINK_REVIEW_REQUIRED
+  priority_values:
+    P0: "Core resource; execute first and treat as canonical"
+    P1: "Important supporting resource"
+    P2: "Optional or complementary resource"
+
+resources:
+  - id: cdl-google-skills-learning-path
+    certification: CDL
+    exam_section: all
+    priority: P0
+    resource_type: google-skills
+    name: Cloud Digital Leader Learning Path
+    url: https://www.cloudskillsboost.google/paths/9
+    repo_path: 01-cloud-digital-leader/google-skills/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: cdl-exam-guide
+    certification: CDL
+    exam_section: all
+    priority: P0
+    resource_type: exam-blueprint
+    name: Cloud Digital Leader Exam Guide
+    url: https://cloud.google.com/learn/certification/guides/cloud-digital-leader
+    repo_path: 01-cloud-digital-leader/cloud_digital_leader_exam_guide_english.pdf
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: cdl-coursera
+    certification: CDL
+    exam_section: all
+    priority: P0
+    resource_type: coursera
+    name: Google Cloud Digital Leader Professional Certificate
+    url: https://www.coursera.org/professional-certificates/google-cloud-digital-leader-training
+    repo_path: 01-cloud-digital-leader/coursera/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: cdl-getting-started-google-cloud
+    certification: CDL
+    exam_section: digital-transformation
+    priority: P1
+    resource_type: documentation
+    name: Getting Started with Google Cloud
+    url: https://cloud.google.com/docs/get-started
+    repo_path: 01-cloud-digital-leader/01-digital-transformation/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: cdl-bigquery-python
+    certification: CDL
+    exam_section: data-transformation
+    priority: P1
+    resource_type: codelab
+    name: BigQuery with Python
+    url: https://codelabs.developers.google.com/codelabs/cloud-bigquery-python?hl=es-419
+    repo_path: 01-cloud-digital-leader/02-data-transformation/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: cdl-generative-ai-repository
+    certification: CDL
+    exam_section: artificial-intelligence
+    priority: P1
+    resource_type: github-colab
+    name: Generative AI on Google Cloud
+    url: https://github.com/GoogleCloudPlatform/generative-ai
+    repo_path: 01-cloud-digital-leader/03-artificial-intelligence/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: cdl-gemini-getting-started
+    certification: CDL
+    exam_section: artificial-intelligence
+    priority: P2
+    resource_type: colab
+    name: Gemini Getting Started notebooks
+    url: https://github.com/GoogleCloudPlatform/generative-ai/tree/main/gemini/getting-started
+    repo_path: 01-cloud-digital-leader/03-artificial-intelligence/colab/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: ace-google-skills-learning-path
+    certification: ACE
+    exam_section: all
+    priority: P0
+    resource_type: google-skills
+    name: Cloud Engineer Learning Path
+    url: https://www.cloudskillsboost.google/paths/11?hl=es-419
+    repo_path: 02-associate-cloud-engineer/google-skills/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: ace-exam-guide
+    certification: ACE
+    exam_section: all
+    priority: P0
+    resource_type: exam-blueprint
+    name: Associate Cloud Engineer Exam Guide
+    url: https://cloud.google.com/learn/certification/guides/cloud-engineer
+    repo_path: 02-associate-cloud-engineer/associate_cloud_engineer_exam_guide_english.pdf
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: ace-cloud-run-cloud-sql
+    certification: ACE
+    exam_section: planning-implementing-cloud-solution
+    priority: P0
+    resource_type: codelab
+    name: Full-stack app - Cloud Run + Cloud SQL
+    url: https://codelabs.developers.google.com/codelabs/deploy-application-with-database/cloud-sql-nextjs
+    repo_path: 02-associate-cloud-engineer/02-planning-implementing-cloud-solution/compute/cloud-run-cloud-sql/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: ace-gke-deploy-scale-update
+    certification: ACE
+    exam_section: ensuring-successful-operation
+    priority: P0
+    resource_type: codelab
+    name: Deploy, scale and update with GKE
+    url: https://codelabs.developers.google.com/codelabs/cloud-deploy-website-on-gke
+    repo_path: 02-associate-cloud-engineer/03-ensuring-successful-operation/compute/gke/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: ace-online-boutique
+    certification: ACE
+    exam_section: ensuring-successful-operation
+    priority: P0
+    resource_type: github
+    name: Online Boutique / microservices-demo
+    url: https://github.com/GoogleCloudPlatform/microservices-demo
+    repo_path: 02-associate-cloud-engineer/03-ensuring-successful-operation/compute/online-boutique/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: ace-bigquery-python
+    certification: ACE
+    exam_section: planning-implementing-cloud-solution
+    priority: P0
+    resource_type: codelab
+    name: BigQuery with Python
+    url: https://codelabs.developers.google.com/codelabs/cloud-bigquery-python?hl=es-419
+    repo_path: 02-associate-cloud-engineer/02-planning-implementing-cloud-solution/storage-and-data/bigquery/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: ace-cloud-run-samples
+    certification: ACE
+    exam_section: planning-implementing-cloud-solution
+    priority: P1
+    resource_type: github
+    name: Cloud Run Samples
+    url: https://github.com/GoogleCloudPlatform/cloud-run-samples
+    repo_path: 02-associate-cloud-engineer/02-planning-implementing-cloud-solution/compute/cloud-run/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: ace-cloud-foundation-fabric
+    certification: ACE
+    exam_section: planning-implementing-cloud-solution
+    priority: P1
+    resource_type: github-terraform
+    name: Cloud Foundation Fabric
+    url: https://github.com/GoogleCloudPlatform/cloud-foundation-fabric
+    repo_path: 02-associate-cloud-engineer/02-planning-implementing-cloud-solution/tooling/terraform/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: ace-gke-outage-sre
+    certification: ACE
+    exam_section: ensuring-successful-operation
+    priority: P1
+    resource_type: codelab
+    name: GKE outage, SRE and Antigravity
+    url: https://codelabs.developers.google.com/codelabs/investigate-gke-cluster-breakage-scenarios-with-postmortem?hl=es-419
+    repo_path: 02-associate-cloud-engineer/03-ensuring-successful-operation/monitoring-and-logging/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: ace-coursera
+    certification: ACE
+    exam_section: all
+    priority: P2
+    resource_type: coursera
+    name: Cloud Engineer Professional Certificate
+    url: https://www.coursera.org/professional-certificates/cloud-engineering-gcp
+    repo_path: 02-associate-cloud-engineer/coursera/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: ace-packt
+    certification: ACE
+    exam_section: all
+    priority: P2
+    resource_type: coursera-third-party
+    name: Packt Google Cloud Associate Cloud Engineer
+    url: https://www.coursera.org/learn/packt-google-cloud-platform-associate-cloud-engineer-wxgbf
+    repo_path: shared/third-party/packt/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: pca-exam-guide
+    certification: PCA
+    exam_section: all
+    priority: P0
+    resource_type: exam-blueprint
+    name: Professional Cloud Architect Exam Guide
+    url: https://cloud.google.com/learn/certification/guides/professional-cloud-architect
+    repo_path: 03-professional-cloud-architect/professional_cloud_architect_exam_guide_english.pdf
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: pca-well-architected
+    certification: PCA
+    exam_section: all
+    priority: P0
+    resource_type: architecture-center
+    name: Google Cloud Well-Architected Framework
+    url: https://docs.cloud.google.com/docs/get-started/well-architected-framework
+    repo_path: 03-professional-cloud-architect/01-designing-planning-architecture/well-architected/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: pca-google-skills-learning-path
+    certification: PCA
+    exam_section: all
+    priority: P0
+    resource_type: google-skills
+    name: Cloud Architect Learning Path
+    url: https://www.cloudskillsboost.google/paths/12
+    repo_path: 03-professional-cloud-architect/google-skills/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: pca-deployment-archetypes
+    certification: PCA
+    exam_section: designing-planning-architecture
+    priority: P0
+    resource_type: architecture-center
+    name: Google Cloud Deployment Archetypes
+    url: https://docs.cloud.google.com/architecture/deployment-archetypes
+    repo_path: 03-professional-cloud-architect/01-designing-planning-architecture/deployment-archetypes/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: pca-architecture-center-samples
+    certification: PCA
+    exam_section: designing-planning-architecture
+    priority: P0
+    resource_type: github-terraform
+    name: Architecture Center Samples
+    url: https://github.com/GoogleCloudPlatform/architecture-center-samples
+    repo_path: 03-professional-cloud-architect/01-designing-planning-architecture/reference-architectures/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: pca-cloud-foundation-fabric-fast
+    certification: PCA
+    exam_section: managing-provisioning-infrastructure
+    priority: P0
+    resource_type: github-terraform
+    name: Cloud Foundation Fabric / FAST
+    url: https://github.com/GoogleCloudPlatform/cloud-foundation-fabric
+    repo_path: 03-professional-cloud-architect/02-managing-provisioning-infrastructure/landing-zone/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: pca-terraform-example-foundation
+    certification: PCA
+    exam_section: security-compliance
+    priority: P0
+    resource_type: github-terraform
+    name: Terraform Example Foundation
+    url: https://github.com/terraform-google-modules/terraform-example-foundation
+    repo_path: 03-professional-cloud-architect/03-security-compliance/cloud-foundation/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: pca-reliable-infrastructure
+    certification: PCA
+    exam_section: solution-operations-excellence
+    priority: P1
+    resource_type: coursera
+    name: Reliable Google Cloud Infrastructure
+    url: https://www.coursera.org/learn/reliable-google-cloud-infrastructure-design
+    repo_path: 03-professional-cloud-architect/06-solution-operations-excellence/
+    resource_status: LINK_REVIEW_REQUIRED
+    execution_status: NOT_STARTED
+
+  - id: pca-agent-platform
+    certification: PCA
+    exam_section: managing-provisioning-infrastructure
+    priority: P1
+    resource_type: github
+    name: Agent Platform curated resources
+    url: https://github.com/Google-Cloud-AI/agent-platform
+    repo_path: 03-professional-cloud-architect/02-managing-provisioning-infrastructure/agent-platform/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: pca-generative-ai
+    certification: PCA
+    exam_section: managing-provisioning-infrastructure
+    priority: P1
+    resource_type: github-colab
+    name: Generative AI on Google Cloud
+    url: https://github.com/GoogleCloudPlatform/generative-ai/tree/main/rag-grounding
+    repo_path: 03-professional-cloud-architect/02-managing-provisioning-infrastructure/agent-platform-ml-workflows/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: pca-genai-factory
+    certification: PCA
+    exam_section: managing-provisioning-infrastructure
+    priority: P1
+    resource_type: github-terraform
+    name: GenAI Factory
+    url: https://github.com/GoogleCloudPlatform/genai-factory
+    repo_path: 03-professional-cloud-architect/02-managing-provisioning-infrastructure/genai-factory/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: pca-adk-gemini-bigquery-mcp-cloud-run
+    certification: PCA
+    exam_section: managing-provisioning-infrastructure
+    priority: P1
+    resource_type: codelab
+    name: ADK + Gemini + BigQuery MCP + Cloud Run
+    url: https://codelabs.developers.google.com/codelabs/cloud-run/cloud-run-adk-gemini-bq-mcp
+    repo_path: 03-professional-cloud-architect/02-managing-provisioning-infrastructure/agent-platform-ml-workflows/capstones/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: pca-gke-outage-sre
+    certification: PCA
+    exam_section: solution-operations-excellence
+    priority: P1
+    resource_type: codelab
+    name: GKE outage and SRE
+    url: https://codelabs.developers.google.com/codelabs/investigate-gke-cluster-breakage-scenarios-with-postmortem?hl=es-419
+    repo_path: 03-professional-cloud-architect/06-solution-operations-excellence/sre/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: pca-coursera
+    certification: PCA
+    exam_section: all
+    priority: P2
+    resource_type: coursera
+    name: Cloud Architect Professional Certificate
+    url: https://www.coursera.org/professional-certificates/cloud-architecture-gcp
+    repo_path: 03-professional-cloud-architect/coursera/
+    resource_status: LINK_REVIEW_REQUIRED
+    execution_status: NOT_STARTED
+
+  - id: architecture-center-release-notes
+    certification: PCA
+    exam_section: all
+    priority: P1
+    resource_type: architecture-center
+    name: What's New in the Architecture Center
+    url: https://docs.cloud.google.com/architecture/release-notes
+    repo_path: shared/architecture-patterns/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+governance:
+  canonicality_order:
+    - exam-blueprint
+    - google-skills
+    - architecture-center
+    - github-terraform
+    - codelab
+    - github-colab
+    - coursera
+    - coursera-third-party
+  placement_rule: "Place each resource at its primary certification and exam section; use shared only for genuinely cross-cutting resources."
+  verification_rule: "Before execution or download, verify the URL, title, source owner, and last-modified or publication signal when available."
+  link_failure_rule: "If a URL is unavailable or ambiguous, set resource_status to LINK_REVIEW_REQUIRED and do not invent a replacement URL."
+  execution_rule: "Track each resource from NOT_STARTED to IN_PROGRESS, COMPLETED, and EVIDENCE_CAPTURED."
