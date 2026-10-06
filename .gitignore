@@ -1,0 +1,27 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+
+# Local credentials and configuration
+.env
+.env.*
+!.env.example
+gcloud-credentials*.json
+service-account*.json
+
+# Python / notebooks
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Build and OS files
+dist/
+build/
+node_modules/
+.DS_Store
+Thumbs.db
