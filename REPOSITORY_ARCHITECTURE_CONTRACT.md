@@ -184,9 +184,9 @@ El plan operativo de estudio y práctica está definido en [`STUDY_EXECUTION_PLA
 
 El plan no cambia la clasificación del repositorio: solo define cuándo y cómo se ejecuta cada recurso. Los estados de avance deben mantenerse en sincronía con `RESOURCE_REGISTRY_v0.1.yaml`.
 
-## 10. Proyecto transversal Digital Twin
+## 10. Proyecto transversal CareOps Cloud Digital Twin
 
-El proyecto integral B2E + B2B + B2C está definido en [`shared/digital-twin-platform/PROJECT_CHARTER.md`](shared/digital-twin-platform/PROJECT_CHARTER.md). Es un proyecto aplicado transversal, no una cuarta certificación.
+El proyecto integral B2E + B2B + B2C está definido en [`shared/digital-twin-platform/PROJECT_CHARTER.md`](shared/digital-twin-platform/PROJECT_CHARTER.md). El producto seleccionado es **CareOps Cloud**, una plataforma de coordinación y alertas para el cuidado de adultos mayores. Es un proyecto aplicado transversal, no una cuarta certificación.
 
 Su arquitectura combina:
 

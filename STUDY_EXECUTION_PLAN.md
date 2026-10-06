@@ -1,13 +1,15 @@
-# Plan diario de ejecución: CDL → ACE → PCA
+# Plan diario de estudio y trabajo: CareOps Cloud + CDL → ACE → PCA
 
-**Versión:** \`1.0.0\`  
+**Versión:** \`1.1.0\`  
 **Inicio recomendado:** Semana 1  
 **Duración total:** 42 semanas  
 **Carga estimada:** 679 horas  
 **Días de estudio:** 6 por semana  
 **Día de descanso:** domingo, salvo simulacros o examen
 
-Este plan convierte el contrato \`RAC-001\` y el registro [\`RESOURCE_REGISTRY_v0.1.yaml\`](RESOURCE_REGISTRY_v0.1.yaml) en una secuencia diaria ejecutable. La ruta \`CDL → ACE → PCA\` es una progresión pedagógica del repositorio; no es un requisito oficial de Google.
+Este plan convierte el contrato \`RAC-001\`, el registro [\`RESOURCE_REGISTRY_v0.1.yaml\`](RESOURCE_REGISTRY_v0.1.yaml) y el charter de [CareOps Cloud](shared/digital-twin-platform/PROJECT_CHARTER.md) en una secuencia diaria ejecutable. La ruta \`CDL → ACE → PCA\` es una progresión pedagógica del repositorio; no es un requisito oficial de Google.
+
+CareOps Cloud será el proyecto transversal principal. Online Boutique, \`microservices-demo\`, Cloud Run Samples, Cloud Foundation Fabric y los codelabs se utilizarán como referencias técnicas, no como el producto principal.
 
 ## 1. Recursos disponibles y función
 
@@ -17,6 +19,7 @@ Este plan convierte el contrato \`RAC-001\` y el registro [\`RESOURCE_REGISTRY_v
 | GCP Pay Per Use | Validar despliegues reales, operación, IAM, networking y arquitectura | Crear presupuesto, alertas y borrar recursos al terminar cada sesión |
 | Laptop workstation | gcloud, Terraform, Docker, Git, documentación, notebooks, diagramas y pruebas locales | Preparar y validar localmente antes de consumir GCP |
 | Repositorio | Notas, código, evidencia, decisiones y estado de ejecución | Registrar cada lab con objetivo, costo, validación y limpieza |
+| CareOps Cloud | Hilo conductor de negocio, implementación y arquitectura | Cada fase debe producir una demo, decisión o evidencia reutilizable |
 
 ## 2. Jornada semanal estándar
 
@@ -46,12 +49,12 @@ Este plan convierte el contrato \`RAC-001\` y el registro [\`RESOURCE_REGISTRY_v
 
 | Semana | Tema | Lunes–viernes | Sábado | Evidencia mínima |
 |---:|---|---|---|---|
-| 1 | Transformación digital | 7.5 h de guía y Google Skills | 3 h de mapa de conceptos | Resumen de cloud, modelos, valor y diferenciadores |
-| 2 | Datos | 7.5 h de BigQuery, Looker y datos | 3 h de BigQuery con Python | Notebook o captura de consulta y explicación de valor |
-| 3 | IA | 7.5 h de IA, Gemini y agentic AI | 3 h de un notebook Gemini | Comparación de IA generativa, agentes, RAG y usos |
+| 1 | CareOps business case | 7.5 h de guía y Google Skills | 3 h de mapa de actores y proceso manual | Caso B2B2C, problema, KPIs, riesgos y alcance V0 |
+| 2 | Datos del cuidado | 7.5 h de BigQuery, Looker y datos | 3 h de BigQuery con Python | Modelo de caregiver, adulto mayor, visita, evento y alerta |
+| 3 | IA responsable | 7.5 h de IA, Gemini y agentic AI | 3 h de un notebook Gemini | Límites: coordinación, no diagnóstico; riesgos y consentimiento |
 | 4 | Modernización | 7.5 h de compute, contenedores y serverless | 3 h de arquitectura de modernización | Matriz IaaS/PaaS/CaaS/serverless |
 | 5 | Confianza y seguridad | 7.5 h de IAM, seguridad, privacidad y cumplimiento | 3 h de caso de responsabilidad compartida | Decisión de seguridad para un caso empresarial |
-| 6 | Operaciones y examen | 7.5 h de repaso y preguntas | 3 h de simulacro y brechas | Checklist de preparación y decisión de examen |
+| 6 | Operaciones y examen | 7.5 h de repaso y preguntas | 3 h de simulacro y brechas | Checklist CDL + pitch de CareOps de 5 minutos |
 
 **Salida de fase:** completar el Learning Path CDL, revisar las seis áreas, resolver preguntas de práctica y programar el examen cuando el simulacro sea consistente.
 
@@ -66,17 +69,17 @@ Este plan convierte el contrato \`RAC-001\` y el registro [\`RESOURCE_REGISTRY_v
 | 7 | Entorno cloud | Organización conceptual, proyectos, APIs, regiones y billing | Checklist de proyecto, APIs, cuotas y presupuesto |
 | 8 | IAM y cuentas | Roles, políticas, service accounts y Workforce Identity | Matriz de permisos y prueba de mínimo privilegio |
 | 9 | Compute Engine | VM, discos, imágenes, snapshots y grupos administrados | Lab reproducible y limpieza verificada |
-| 10 | Cloud Run | Imagen, despliegue, revisiones, variables y autenticación | Servicio desplegado y rollback documentado |
-| 11 | GKE fundamentos | Cluster, nodes, workloads, Service y Artifact Registry | Aplicación desplegada en GKE |
+| 10 | CareOps V1 serverless | Cloud Run, API, autenticación y registro de visitas | Visit ID, caregiver, horario, llegada y estado |
+| 11 | Referencia GKE | Cluster, nodes, workloads, Service y Artifact Registry | Comparación Cloud Run vs GKE; GKE no es aún el runtime principal |
 | 12 | GKE operación | Réplicas, rollout, subnet, DNS, NAT y escalamiento | Cambio sin downtime y evidencia de operación |
 | 13 | Storage y bases de datos | Cloud Storage, Cloud SQL, BigQuery y elección de producto | Matriz de decisión y consultas ejecutadas |
 | 14 | Networking | VPC, subnets, firewall, balanceo, rutas y conectividad | Diagrama de red y prueba de conectividad |
 | 15 | IaC | Terraform, variables, módulos, state y plan/apply | Infraestructura reproducible desde workstation |
-| 16 | Cloud Run + Cloud SQL | Proyecto full-stack completo | Aplicación, base de datos, secretos y cleanup |
+| 16 | CareOps V1 completo | Cloud Run + Cloud SQL + Secret Manager | Registro de visitas, roles, alertas básicas y cleanup |
 | 17 | Monitoring | Métricas, dashboards, alertas, uptime checks y SLO básico | Alerta funcional con prueba controlada |
 | 18 | Logging y diagnóstico | Log Router, buckets, Logs Explorer, Ops Agent y auditoría | Investigación documentada de un incidente |
-| 19 | Online Boutique | Despliegue del sistema de microservicios | Inventario de servicios y dependencias |
-| 20 | GKE outage/SRE | Romper, investigar, reparar y redactar postmortem | Postmortem con causa raíz y acciones |
+| 19 | CareOps V2 event-driven | Pub/Sub, Eventarc, reglas de retraso y notificaciones | Evento visit.registered → ALERT_CREATED |
+| 20 | Failure engineering | Usar Online Boutique/GKE outage como referencia; inyectar fallos en CareOps | Postmortem de backlog, timeout, IAM o Cloud SQL |
 | 21 | Repaso ACE | Repetir laboratorios débiles y preguntas por dominio | Matriz de brechas y segunda ejecución |
 | 22 | Readiness y examen | Simulacros, revisión de comandos y examen | Checklist ACE y evidencia de preparación |
 
@@ -107,7 +110,7 @@ Este plan convierte el contrato \`RAC-001\` y el registro [\`RESOURCE_REGISTRY_v
 | 37 | Operations Excellence | SLO, SLI, observabilidad, DR, incidentes y mejora continua | Runbook y plan DR |
 | 38 | Agent Platform | Agent Runtime, sesiones, memoria, MCP, A2A y seguridad | Diagrama de plataforma agentic |
 | 39 | GenAI y RAG | Grounding, embeddings, Vector Search, evaluación y costo | ADR de RAG/grounding |
-| 40 | Capstone | ADK + Gemini + BigQuery MCP + Cloud Run o solución equivalente | Arquitectura, IaC, demo y evidencia |
+| 40 | CareOps V5 capstone | ADK + modelo + BigQuery MCP + Cloud Run/GKE | Agente de coordinación, herramientas, aprobación y evidencia |
 | 41 | Casos y simulacros | Casos PCA, decisiones bajo restricciones y defensa oral | 2 simulacros revisados |
 | 42 | Readiness y examen | Repaso final, revisión de brechas y examen | Checklist PCA y paquete final |
 
@@ -183,3 +186,71 @@ Si una semana queda por debajo del 80% de sus objetivos, se repite o se extiende
 | PCA | 20 | 18 | 360 | Diseño, trade-offs y capstone arquitectónico |
 | **Total** | **42** | — | **679** | Ruta completa CDL → ACE → PCA |
 
+## 11. Ruta de trabajo CareOps Cloud
+
+Esta es la secuencia de construcción que debe acompañar el estudio. Cada versión tiene que quedar demostrable antes de abrir la siguiente.
+
+| Versión | Semanas | Construcción | Competencia principal |
+|---|---:|---|---|
+| V0 | 1–6 | Business case, actores, proceso manual, KPIs, datos sintéticos y límites médicos | CDL |
+| V1 | 7–16 | Web/API en Cloud Run, Cloud SQL, IAM, Secret Manager y registro de visitas | ACE |
+| V2 | 17–20 | Pub/Sub, Eventarc, reglas determinísticas, alertas y notificaciones | ACE |
+| V3 | 17–22 | Logging, Monitoring, Trace, métricas custom, dashboards y troubleshooting | ACE |
+| V4 | 23–37 | Rediseño PCA: HA, DR, costos, multi-tenant, seguridad, IaC y SLO | PCA |
+| V5 | 38–42 | ADK, MCP, agente de coordinación, evaluación, aprobación humana y benchmark | PCA / Agentic |
+
+### MVP funcional de CareOps
+
+El primer flujo debe ser deliberadamente simple y sin IA:
+
+~~~text
+Caregiver registra visita
+        ↓
+Cloud Run API
+        ↓
+Cloud SQL
+        ↓
+Pub/Sub / Eventarc
+        ↓
+Regla: retraso > 30 minutos
+        ↓
+ALERT_CREATED
+        ↓
+Notificación al coordinador
+~~~
+
+Después se compara:
+
+~~~text
+Rules Engine vs Agent vs Hybrid
+~~~
+
+Las métricas mínimas son precisión, latencia, costo, explicabilidad, falsos positivos y confiabilidad. El agente solo podrá sugerir o preparar una escalación; la acción sensible requiere aprobación humana.
+
+### Failure engineering
+
+Los escenarios mínimos son:
+
+- Cloud SQL no disponible;
+- backlog de Pub/Sub;
+- timeout de una herramienta del agente;
+- permiso IAM inválido;
+- aumento de latencia en Cloud Run;
+- cuota de BigQuery;
+- recomendación agentic incorrecta.
+
+Cada escenario debe seguir el ciclo: inject → detect → observe → diagnose → recover → postmortem.
+
+### Evidencia de portfolio
+
+Cada release de CareOps debe incluir:
+
+- diagrama de arquitectura;
+- README ejecutable;
+- código o Terraform relevante;
+- decisión arquitectónica y trade-offs;
+- métricas y costo;
+- pruebas y fallos inyectados;
+- evidencia de cleanup;
+- postmortem cuando aplique;
+- relación con objetivos CDL, ACE o PCA.

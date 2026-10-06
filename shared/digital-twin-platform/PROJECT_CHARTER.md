@@ -1,14 +1,16 @@
-# Proyecto integral: Digital Twin B2E + B2B + B2C
+# CareOps Cloud: Digital Twin B2E + B2B + B2C
 
-**Estado:** PROPOSED  
+**Estado:** SELECTED-PROJECT  
 **Tipo:** proyecto transversal aplicado  
 **Ubicación arquitectónica:** shared/digital-twin-platform/  
 **Stack estratégico:** Google Cloud + Google ADK + NVIDIA Nemotron/NIM  
-**Versión:** 0.1.0
+**Versión:** 0.2.0
+
+**Tesis del producto:** plataforma B2B2C de coordinación y alertas para el cuidado de adultos mayores. Los cuidadores o familiares registran visitas y eventos; Google Cloud procesa los eventos, genera alertas operativas, conserva trazabilidad y produce analítica. La IA ayuda a coordinar, priorizar y resumir, pero no diagnostica.
 
 ## 1. Visión
 
-Construir un digital twin operativo y evolutivo que represente personas, empresas, clientes, activos, productos, procesos, eventos y relaciones de un ecosistema de negocio. El twin servirá como una capa común de conocimiento, simulación y decisión para tres experiencias:
+Construir CareOps Cloud como un digital twin operativo y evolutivo que represente adultos mayores, cuidadores, familiares, coordinadores, proveedores, visitas, alertas, políticas, eventos y relaciones del ecosistema de cuidado. El twin servirá como una capa común de conocimiento, simulación y decisión para tres experiencias:
 
 - B2E — Business to Employee: copilotos para empleados, operaciones, aprendizaje y productividad.
 - B2B — Business to Business: colaboración con clientes empresariales, proveedores, partners y cuentas.
@@ -18,7 +20,7 @@ No será únicamente un chatbot. Será una plataforma con estado, identidad, eve
 
 ## 2. Objetivo de negocio
 
-Permitir que una organización entienda el estado de su ecosistema, detecte cambios y riesgos, simule escenarios, coordine agentes y personas, personalice experiencias y convierta decisiones en acciones auditables.
+Permitir que una organización de cuidados entienda el estado de sus operaciones, detecte retrasos e incidencias, simule escenarios, coordine agentes y personas y convierta decisiones en acciones auditables, sin convertir el sistema en una herramienta de diagnóstico médico.
 
 ## 3. Principios de diseño
 
@@ -93,16 +95,16 @@ Referencia oficial: https://www.nvidia.com/en-us/ai-data-science/foundation-mode
 
 ## 6. Modelo conceptual del twin
 
-Entidades iniciales:
+Entidades iniciales de CareOps:
 
-Person, Employee, Organization, Customer, Partner, Product, Service, Asset, Location, Process, Interaction, Transaction, Event, Policy, Capability, Risk, Scenario, Decision y Evidence.
+Person, OlderAdult, Caregiver, FamilyMember, Coordinator, Organization, Provider, Visit, CarePlan, Alert, Location, Process, Interaction, Event, Policy, Risk, Scenario, Decision y Evidence.
 
 Cada entidad debe tener identificador estable, origen, propietario, clasificación de datos, timestamp de vigencia, versión, confianza, permisos, lineage y estado actual/histórico cuando aplique.
 
 ## 7. Agentes iniciales
 
 - Twin Orchestrator: coordina intención, contexto, agentes y políticas.
-- B2E Employee Copilot: políticas, onboarding, productividad, capacitación y soporte.
+- B2E Care Coordinator Copilot: políticas, turnos, priorización, seguimiento y soporte operativo.
 - B2B Account and Operations Agent: cuentas, contratos, SLA, partners y forecast.
 - B2C Experience Agent: soporte, recomendaciones y autoservicio con consentimiento.
 - Simulation and What-if Agent: precios, capacidad, interrupciones, demanda y migraciones.
@@ -123,9 +125,9 @@ Nunca se permite modificar nómina, crédito, contratos, precios críticos, dere
 
 ## 9. MVP
 
-### MVP-1: Twin foundation
+### MVP-1: CareOps twin foundation
 
-Modelo de entidades, datos sintéticos, Pub/Sub, Dataflow, BigQuery, documentos, API, lineage y dashboard.
+Modelo de entidades de cuidado, datos sintéticos, Pub/Sub, Dataflow, BigQuery, documentos, API, lineage y dashboard.
 
 ### MVP-2: ADK control plane
 
@@ -170,7 +172,7 @@ What-if, aprobaciones, rollback, SLO, incident response, DR, seguridad, evaluaci
 - Autonomía excesiva: niveles de autonomía y human-in-the-loop.
 - Licenciamiento: revisar el acuerdo del Nemotron y NIM seleccionado antes de uso comercial.
 - Twin desactualizado: freshness SLO, timestamps, lineage e incertidumbre.
-- Complejidad prematura: iniciar con un dominio y un journey por segmento.
+- Complejidad prematura: iniciar con el journey de visita retrasada y un segmento controlado.
 
 ## 13. Relación con la arquitectura del repositorio
 
@@ -196,4 +198,3 @@ shared/
     ├── security/
     └── evidence/
 ~~~
-
