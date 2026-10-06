@@ -3,6 +3,7 @@
 **ID:** CDL-QB-2026-001  
 **Versión:** 2026.1  
 **Fuente canónica:** `CDL_QUESTION_BANK_2026.yaml`
+**Taxonomía:** `CDL_QUESTION_TAXONOMY_2026.md`
 
 ## Propósito
 
@@ -16,6 +17,7 @@ Cada pregunta debe tener:
 - dominio del blueprint;
 - nivel de dificultad;
 - tipo de pregunta;
+- clasificación cognitiva y patrón de pregunta;
 - opciones y respuesta esperada;
 - conceptos evaluados;
 - relación con CareOps V0–V5.
@@ -30,6 +32,17 @@ Cada pregunta debe tener:
 6. No revelar `answer` antes de que el usuario responda.
 7. Después de cada respuesta, mostrar: resultado, explicación breve, concepto, dominio y vínculo con CareOps.
 8. Registrar intentos, aciertos, errores y preguntas pendientes, sin modificar el texto canónico.
+
+## Distribución de dificultad
+
+El banco de 96 preguntas debe conservar variedad:
+
+- 30% reconocimiento y definiciones;
+- 35% comparación y selección de producto;
+- 25% aplicación a escenarios empresariales;
+- 10% evaluación de riesgo, arquitectura y gobierno.
+
+Las preguntas 049–096 amplían deliberadamente los casos de negocio y la evaluación de IA para evitar que el entrenamiento dependa solo de memorización.
 
 ## Criterio de preparación
 

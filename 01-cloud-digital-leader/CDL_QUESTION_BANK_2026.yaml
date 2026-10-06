@@ -2,7 +2,7 @@ version: "2026.1"
 title: "Cloud Digital Leader question bank — 2026"
 language: "en"
 purpose: "Canonical study questions for randomized practice; these are representative questions, not exam dumps."
-question_count: 48
+question_count: 96
 domains:
   - digital-transformation
   - data-transformation
@@ -448,3 +448,537 @@ questions:
     answer: "Risk, authorization, evidence, rollback, and human approval"
     concepts: [agent-governance, risk, approval, rollback]
     careops: [V3, V5]
+
+  - id: CDL-049
+    domain: digital-transformation
+    level: intermediate
+    cognitive: apply
+    pattern: business-scenario
+    type: single_choice
+    question: "A retailer has unpredictable demand and wants to avoid buying servers for peak traffic. Which cloud characteristic is most relevant?"
+    options: ["Elasticity", "Data sovereignty", "Manual provisioning", "Physical isolation"]
+    answer: "Elasticity"
+    concepts: [elasticity, scalability, business-value]
+    careops: [V1]
+  - id: CDL-050
+    domain: digital-transformation
+    level: intermediate
+    cognitive: compare
+    pattern: tradeoff
+    type: single_choice
+    question: "Which tradeoff is most associated with a managed PaaS compared with IaaS?"
+    options: ["Less infrastructure control but less operational effort", "More hardware ownership and more patching", "No scalability", "No shared responsibility"]
+    answer: "Less infrastructure control but less operational effort"
+    concepts: [paas, iaas, tradeoffs]
+    careops: [V1, V4]
+  - id: CDL-051
+    domain: digital-transformation
+    level: basic
+    cognitive: recognize
+    pattern: definition
+    type: single_choice
+    question: "What is cloud-native development generally associated with?"
+    options: ["Designing applications to use cloud capabilities such as automation and elasticity", "Running only on physical servers", "Avoiding APIs", "Disabling observability"]
+    answer: "Designing applications to use cloud capabilities such as automation and elasticity"
+    concepts: [cloud-native, automation]
+    careops: [V1, V2]
+  - id: CDL-052
+    domain: digital-transformation
+    level: intermediate
+    cognitive: apply
+    pattern: product-selection
+    type: single_choice
+    question: "A global service needs low-latency delivery of content near users. Which architectural capability is most relevant?"
+    options: ["Edge locations and global networking", "A single-zone deployment", "Manual DNS files on each laptop", "A larger local disk"]
+    answer: "Edge locations and global networking"
+    concepts: [edge, latency, global-network]
+    careops: [V1, V4]
+  - id: CDL-053
+    domain: digital-transformation
+    level: intermediate
+    cognitive: compare
+    pattern: tradeoff
+    type: multi_select
+    question: "Which factors can justify retaining an on-premises component?"
+    options: ["Regulatory constraints", "Specialized hardware dependencies", "Latency to local equipment", "Preference without a business reason"]
+    answer: ["Regulatory constraints", "Specialized hardware dependencies", "Latency to local equipment"]
+    concepts: [on-premises, hybrid, constraints]
+    careops: [V0, V4]
+  - id: CDL-054
+    domain: digital-transformation
+    level: intermediate
+    cognitive: apply
+    pattern: tradeoff
+    type: single_choice
+    question: "Why can bandwidth become a design constraint for a data-intensive application?"
+    options: ["It limits how much data can move over a connection in a period", "It defines user permissions", "It encrypts data automatically", "It replaces storage capacity"]
+    answer: "It limits how much data can move over a connection in a period"
+    concepts: [bandwidth, networking, performance]
+    careops: [V2, V4]
+  - id: CDL-055
+    domain: digital-transformation
+    level: basic
+    cognitive: recognize
+    pattern: definition
+    type: single_choice
+    question: "What is an open-source software benefit?"
+    options: ["The source can be inspected and communities can contribute", "The software has no license obligations", "It is always more secure", "It eliminates support decisions"]
+    answer: "The source can be inspected and communities can contribute"
+    concepts: [open-source, governance]
+    careops: [V4, V5]
+  - id: CDL-056
+    domain: digital-transformation
+    level: intermediate
+    cognitive: apply
+    pattern: business-scenario
+    type: single_choice
+    question: "A company wants to modernize incrementally while preserving an existing dependency. Which approach is most appropriate?"
+    options: ["Use a staged migration with explicit retain or replatform decisions", "Rewrite everything before discovery", "Remove the dependency without testing", "Ignore operational requirements"]
+    answer: "Use a staged migration with explicit retain or replatform decisions"
+    concepts: [migration-strategy, modernization, risk]
+    careops: [V0, V4]
+
+  - id: CDL-057
+    domain: data-transformation
+    level: intermediate
+    cognitive: apply
+    pattern: product-selection
+    type: single_choice
+    question: "A workload needs strongly consistent relational transactions with low administration. Which option is most appropriate?"
+    options: ["A managed relational database such as Cloud SQL", "Cloud Storage only", "Cloud Logging", "Cloud CDN"]
+    answer: "A managed relational database such as Cloud SQL"
+    concepts: [cloud-sql, relational, transactions]
+    careops: [V1]
+  - id: CDL-058
+    domain: data-transformation
+    level: intermediate
+    cognitive: compare
+    pattern: product-selection
+    type: single_choice
+    question: "Which workload is a strong fit for a wide-column database such as Bigtable?"
+    options: ["Large-scale low-latency access to key-based data", "Complex ad hoc warehouse reporting only", "Static website hosting", "Identity federation"]
+    answer: "Large-scale low-latency access to key-based data"
+    concepts: [bigtable, nosql, low-latency]
+    careops: [V2, V4]
+  - id: CDL-059
+    domain: data-transformation
+    level: basic
+    cognitive: recognize
+    pattern: definition
+    type: single_choice
+    question: "What is semi-structured data?"
+    options: ["Data with flexible organization and some structural markers, such as JSON", "Only fixed relational rows", "Data with no information", "Only encrypted data"]
+    answer: "Data with flexible organization and some structural markers, such as JSON"
+    concepts: [data-types, json, semi-structured]
+    careops: [V2, V5]
+  - id: CDL-060
+    domain: data-transformation
+    level: intermediate
+    cognitive: apply
+    pattern: business-scenario
+    type: single_choice
+    question: "What does data lineage help an organization understand?"
+    options: ["Where data came from, how it changed, and where it is used", "Which users have the fastest laptops", "How to remove all metadata", "Why an API has no endpoint"]
+    answer: "Where data came from, how it changed, and where it is used"
+    concepts: [lineage, governance, audit]
+    careops: [V0, V4, V5]
+  - id: CDL-061
+    domain: data-transformation
+    level: intermediate
+    cognitive: apply
+    pattern: tradeoff
+    type: single_choice
+    question: "Why might a business use a data lake before a warehouse?"
+    options: ["To retain varied raw data for future processing and analysis", "To guarantee every record is already modeled", "To replace access policies", "To avoid collecting metadata"]
+    answer: "To retain varied raw data for future processing and analysis"
+    concepts: [data-lake, raw-data, analytics]
+    careops: [V2, V5]
+  - id: CDL-062
+    domain: data-transformation
+    level: intermediate
+    cognitive: compare
+    pattern: product-selection
+    type: multi_select
+    question: "Which capabilities support trustworthy analytical data?"
+    options: ["Quality checks", "Access controls", "Metadata and lineage", "Deleting all source context"]
+    answer: ["Quality checks", "Access controls", "Metadata and lineage"]
+    concepts: [data-trust, governance, quality]
+    careops: [V2, V4, V5]
+  - id: CDL-063
+    domain: data-transformation
+    level: intermediate
+    cognitive: apply
+    pattern: business-scenario
+    type: single_choice
+    question: "A team needs dashboards that business users can explore without writing SQL. Which capability is most relevant?"
+    options: ["A governed BI tool such as Looker", "A raw VM disk", "Cloud NAT", "A firewall rule only"]
+    answer: "A governed BI tool such as Looker"
+    concepts: [looker, bi, democratization]
+    careops: [V2, V5]
+  - id: CDL-064
+    domain: data-transformation
+    level: intermediate
+    cognitive: apply
+    pattern: tradeoff
+    type: single_choice
+    question: "What is a key consideration when moving data to a new platform?"
+    options: ["Compatibility, quality, security, migration time, and cost", "Only the logo of the destination service", "Ignoring retention requirements", "Deleting the source before validation"]
+    answer: "Compatibility, quality, security, migration time, and cost"
+    concepts: [data-migration, risk, cost]
+    careops: [V1, V4]
+
+  - id: CDL-065
+    domain: artificial-intelligence
+    level: intermediate
+    cognitive: compare
+    pattern: product-selection
+    type: single_choice
+    question: "When is AutoML generally preferable to building a model entirely from scratch?"
+    options: ["When custom data is important but the team wants to reduce model-development effort", "When no data is available", "When all outputs must be handwritten", "When the problem is a simple fixed rule"]
+    answer: "When custom data is important but the team wants to reduce model-development effort"
+    concepts: [automl, custom-data, effort]
+    careops: [V5]
+  - id: CDL-066
+    domain: artificial-intelligence
+    level: intermediate
+    cognitive: apply
+    pattern: api-matching
+    type: single_choice
+    question: "Which API is most appropriate for converting spoken caregiver notes into text?"
+    options: ["Speech-to-Text", "Vision API", "Cloud Translation", "Text-to-Speech"]
+    answer: "Speech-to-Text"
+    concepts: [speech-to-text, pretrained-api]
+    careops: [V5]
+  - id: CDL-067
+    domain: artificial-intelligence
+    level: intermediate
+    cognitive: apply
+    pattern: api-matching
+    type: single_choice
+    question: "Which service is most appropriate for translating a generated message into another language?"
+    options: ["Cloud Translation", "Speech-to-Text", "Cloud Storage", "Cloud Monitoring"]
+    answer: "Cloud Translation"
+    concepts: [translation, pretrained-api]
+    careops: [V5]
+  - id: CDL-068
+    domain: artificial-intelligence
+    level: intermediate
+    cognitive: apply
+    pattern: business-scenario
+    type: single_choice
+    question: "What is retrieval-augmented generation intended to improve?"
+    options: ["Grounding responses in relevant external or enterprise data", "Removing the need for source data", "Guaranteeing all output is factual", "Replacing identity controls"]
+    answer: "Grounding responses in relevant external or enterprise data"
+    concepts: [rag, grounding, enterprise-data]
+    careops: [V5]
+  - id: CDL-069
+    domain: artificial-intelligence
+    level: intermediate
+    cognitive: apply
+    pattern: business-scenario
+    type: multi_select
+    question: "Which are suitable uses of a generative AI assistant in CareOps?"
+    options: ["Summarizing approved records", "Drafting a follow-up message", "Making an unsupervised medical diagnosis", "Helping staff find procedures"]
+    answer: ["Summarizing approved records", "Drafting a follow-up message", "Helping staff find procedures"]
+    concepts: [genai-use-cases, human-oversight, safety]
+    careops: [V5]
+  - id: CDL-070
+    domain: artificial-intelligence
+    level: intermediate
+    cognitive: compare
+    pattern: tradeoff
+    type: single_choice
+    question: "Why might an organization choose a smaller model for an operational task?"
+    options: ["Lower latency and cost may matter more than maximum general capability", "Smaller always means more accurate", "It removes the need for testing", "It guarantees zero hallucinations"]
+    answer: "Lower latency and cost may matter more than maximum general capability"
+    concepts: [model-selection, latency, cost]
+    careops: [V3, V5]
+  - id: CDL-071
+    domain: artificial-intelligence
+    level: intermediate
+    cognitive: evaluate
+    pattern: responsible-ai
+    type: multi_select
+    question: "Which questions belong in a responsible AI review?"
+    options: ["Who could be harmed?", "Can users understand or challenge the result?", "What data and permissions are used?", "Can we skip testing because the model is popular?"]
+    answer: ["Who could be harmed?", "Can users understand or challenge the result?", "What data and permissions are used?"]
+    concepts: [responsible-ai, fairness, privacy]
+    careops: [V0, V5]
+  - id: CDL-072
+    domain: artificial-intelligence
+    level: intermediate
+    cognitive: evaluate
+    pattern: agent-workflow
+    type: single_choice
+    question: "What is the safest default for an agent that can send external notifications?"
+    options: ["Require validated inputs, scoped credentials, and approval for high-impact sends", "Give it administrator access", "Allow every tool automatically", "Disable audit logging"]
+    answer: "Require validated inputs, scoped credentials, and approval for high-impact sends"
+    concepts: [agent-tools, approvals, safety]
+    careops: [V3, V5]
+
+  - id: CDL-073
+    domain: modernization
+    level: intermediate
+    cognitive: compare
+    pattern: migration-strategy
+    type: single_choice
+    question: "What distinguishes refactoring from rehosting?"
+    options: ["Refactoring changes the application to use a better architecture; rehosting minimizes code changes", "Refactoring only changes billing", "Rehosting always means rewriting", "They are identical terms"]
+    answer: "Refactoring changes the application to use a better architecture; rehosting minimizes code changes"
+    concepts: [refactor, rehost, migration]
+    careops: [V1, V4]
+  - id: CDL-074
+    domain: modernization
+    level: intermediate
+    cognitive: apply
+    pattern: product-selection
+    type: single_choice
+    question: "Which service is designed to run containerized code without managing a Kubernetes cluster?"
+    options: ["Cloud Run", "GKE only", "Cloud SQL", "BigQuery"]
+    answer: "Cloud Run"
+    concepts: [cloud-run, serverless, containers]
+    careops: [V1, V5]
+  - id: CDL-075
+    domain: modernization
+    level: basic
+    cognitive: recognize
+    pattern: definition
+    type: single_choice
+    question: "What is a microservice?"
+    options: ["A relatively small independently deployable service around a business capability", "A physical data center", "A database backup", "A user identity"]
+    answer: "A relatively small independently deployable service around a business capability"
+    concepts: [microservices, decomposition]
+    careops: [V4]
+  - id: CDL-076
+    domain: modernization
+    level: intermediate
+    cognitive: apply
+    pattern: tradeoff
+    type: multi_select
+    question: "Which tradeoffs can arise when adopting Kubernetes?"
+    options: ["More deployment flexibility", "More operational complexity", "Need for cluster and workload governance", "Automatic removal of all platform work"]
+    answer: ["More deployment flexibility", "More operational complexity", "Need for cluster and workload governance"]
+    concepts: [kubernetes, complexity, governance]
+    careops: [V3, V4]
+  - id: CDL-077
+    domain: modernization
+    level: intermediate
+    cognitive: apply
+    pattern: business-scenario
+    type: single_choice
+    question: "Why use a load balancer in a distributed application?"
+    options: ["Distribute traffic and improve availability or performance", "Replace application authorization", "Store long-term documents", "Train every model"]
+    answer: "Distribute traffic and improve availability or performance"
+    concepts: [load-balancing, availability, traffic]
+    careops: [V1, V4]
+  - id: CDL-078
+    domain: modernization
+    level: intermediate
+    cognitive: compare
+    pattern: business-scenario
+    type: single_choice
+    question: "What is a reasonable reason to use a VM instead of serverless?"
+    options: ["The workload needs operating-system control or legacy compatibility", "The workload has no code", "The team wants no patching", "The workload must scale to zero"]
+    answer: "The workload needs operating-system control or legacy compatibility"
+    concepts: [compute-engine, vms, compatibility]
+    careops: [V4]
+  - id: CDL-079
+    domain: modernization
+    level: intermediate
+    cognitive: apply
+    pattern: api-management
+    type: single_choice
+    question: "Why place governance in front of partner APIs?"
+    options: ["To control access, quotas, analytics, and lifecycle", "To remove authentication", "To make every API private to one developer", "To avoid versioning"]
+    answer: "To control access, quotas, analytics, and lifecycle"
+    concepts: [api-governance, quotas, lifecycle]
+    careops: [V4, V5]
+  - id: CDL-080
+    domain: modernization
+    level: intermediate
+    cognitive: evaluate
+    pattern: architecture-choice
+    type: single_choice
+    question: "For a first CareOps MVP with modest traffic and a small team, which choice minimizes undifferentiated operations?"
+    options: ["Cloud Run with managed supporting services", "A self-managed Kubernetes cluster on VMs", "Bare metal in a private data center", "A fleet of manually configured servers"]
+    answer: "Cloud Run with managed supporting services"
+    concepts: [architecture-choice, operational-effort, serverless]
+    careops: [V1]
+
+  - id: CDL-081
+    domain: trust-security
+    level: intermediate
+    cognitive: apply
+    pattern: business-scenario
+    type: single_choice
+    question: "Which control best limits what a service account can do?"
+    options: ["Grant only the required IAM roles on the narrowest resource scope", "Use a project owner role", "Share a human password", "Disable audit logs"]
+    answer: "Grant only the required IAM roles on the narrowest resource scope"
+    concepts: [iam, least-privilege, service-accounts]
+    careops: [V1, V5]
+  - id: CDL-082
+    domain: trust-security
+    level: basic
+    cognitive: recognize
+    pattern: definition
+    type: single_choice
+    question: "What does auditing provide?"
+    options: ["A record of relevant actions and access for investigation", "Automatic approval of every action", "A replacement for encryption", "A guarantee that no one makes mistakes"]
+    answer: "A record of relevant actions and access for investigation"
+    concepts: [audit, logging, accountability]
+    careops: [V3, V5]
+  - id: CDL-083
+    domain: trust-security
+    level: intermediate
+    cognitive: apply
+    pattern: threat-scenario
+    type: single_choice
+    question: "An attacker tries to make an agent call a tool outside its intended purpose. What risk is this closest to?"
+    options: ["Prompt injection or tool misuse", "Cold storage", "Bandwidth optimization", "Database normalization"]
+    answer: "Prompt injection or tool misuse"
+    concepts: [prompt-injection, tool-misuse, agent-security]
+    careops: [V5]
+  - id: CDL-084
+    domain: trust-security
+    level: intermediate
+    cognitive: evaluate
+    pattern: responsible-ai
+    type: single_choice
+    question: "Why should sensitive records be minimized before sending them to an AI workflow?"
+    options: ["To reduce privacy exposure and limit unnecessary data access", "To make the model omniscient", "To eliminate authentication", "To increase all prompts indefinitely"]
+    answer: "To reduce privacy exposure and limit unnecessary data access"
+    concepts: [data-minimization, privacy, ai-security]
+    careops: [V0, V5]
+  - id: CDL-085
+    domain: trust-security
+    level: intermediate
+    cognitive: compare
+    pattern: security-control
+    type: multi_select
+    question: "Which controls can reduce the impact of a compromised agent?"
+    options: ["Short-lived or scoped credentials", "Tool allowlists", "Network and data boundaries", "A shared unrestricted key"]
+    answer: ["Short-lived or scoped credentials", "Tool allowlists", "Network and data boundaries"]
+    concepts: [containment, credentials, boundaries]
+    careops: [V3, V5]
+  - id: CDL-086
+    domain: trust-security
+    level: intermediate
+    cognitive: apply
+    pattern: security-control
+    type: single_choice
+    question: "What is the main purpose of a firewall rule?"
+    options: ["Control allowed network traffic based on defined criteria", "Train a language model", "Create database indexes", "Set an SLO"]
+    answer: "Control allowed network traffic based on defined criteria"
+    concepts: [firewall, network-security]
+    careops: [V1, V4]
+  - id: CDL-087
+    domain: trust-security
+    level: intermediate
+    cognitive: evaluate
+    pattern: incident-response
+    type: single_choice
+    question: "What is the best response when an agent produces an unsafe recommendation?"
+    options: ["Preserve evidence, restrict the workflow, assess impact, and improve controls", "Delete all logs", "Increase its permissions", "Publish the result without review"]
+    answer: "Preserve evidence, restrict the workflow, assess impact, and improve controls"
+    concepts: [incident-response, safety, audit]
+    careops: [V3, V5]
+  - id: CDL-088
+    domain: trust-security
+    level: intermediate
+    cognitive: apply
+    pattern: compliance
+    type: multi_select
+    question: "Which questions help evaluate data sovereignty?"
+    options: ["Where is data stored?", "Who can access it?", "Which regulations apply?", "Which UI color is used?"]
+    answer: ["Where is data stored?", "Who can access it?", "Which regulations apply?"]
+    concepts: [sovereignty, compliance, residency]
+    careops: [V0, V4, V5]
+
+  - id: CDL-089
+    domain: operations
+    level: intermediate
+    cognitive: apply
+    pattern: observability
+    type: single_choice
+    question: "Which signal best indicates that users are waiting too long for a response?"
+    options: ["Latency", "Traffic only", "Storage class", "IAM inheritance"]
+    answer: "Latency"
+    concepts: [golden-signals, latency, user-experience]
+    careops: [V3]
+  - id: CDL-090
+    domain: operations
+    level: intermediate
+    cognitive: compare
+    pattern: service-level
+    type: single_choice
+    question: "How does an SLA differ from an SLO?"
+    options: ["An SLA is a service commitment; an SLO is an internal or operational target", "An SLA is a log entry; an SLO is a VM", "They are always identical", "An SLO is a billing account"]
+    answer: "An SLA is a service commitment; an SLO is an internal or operational target"
+    concepts: [sla, slo, reliability]
+    careops: [V3, V4]
+  - id: CDL-091
+    domain: operations
+    level: intermediate
+    cognitive: apply
+    pattern: cost-control
+    type: multi_select
+    question: "Which practices can help control cloud cost?"
+    options: ["Budgets and alerts", "Right-sizing", "Lifecycle policies", "Ignoring idle resources"]
+    answer: ["Budgets and alerts", "Right-sizing", "Lifecycle policies"]
+    concepts: [finops, cost, governance]
+    careops: [V1, V4]
+  - id: CDL-092
+    domain: operations
+    level: intermediate
+    cognitive: apply
+    pattern: reliability
+    type: single_choice
+    question: "What is the value of a postmortem after an outage?"
+    options: ["Learn from failure and prevent recurrence without focusing on blame", "Hide the incident", "Remove monitoring", "Guarantee no future failures"]
+    answer: "Learn from failure and prevent recurrence without focusing on blame"
+    concepts: [postmortem, sre, learning]
+    careops: [V3]
+  - id: CDL-093
+    domain: operations
+    level: intermediate
+    cognitive: evaluate
+    pattern: agent-evaluation
+    type: multi_select
+    question: "What should an agent evaluation measure?"
+    options: ["Task success", "Safety and policy adherence", "Tool-use correctness", "Only response length"]
+    answer: ["Task success", "Safety and policy adherence", "Tool-use correctness"]
+    concepts: [evaluation, agents, quality]
+    careops: [V3, V5]
+  - id: CDL-094
+    domain: operations
+    level: intermediate
+    cognitive: apply
+    pattern: deployment
+    type: single_choice
+    question: "Why use staged rollout or canary deployment for a new agent?"
+    options: ["Limit blast radius and observe behavior before broad release", "Avoid all testing", "Give the agent more permissions", "Remove rollback capability"]
+    answer: "Limit blast radius and observe behavior before broad release"
+    concepts: [canary, deployment, rollback]
+    careops: [V3, V5]
+  - id: CDL-095
+    domain: operations
+    level: intermediate
+    cognitive: evaluate
+    pattern: architecture-choice
+    type: single_choice
+    question: "Which metric combination best supports an agent cost review?"
+    options: ["Requests, tokens or compute use, latency, errors, and business outcomes", "Only CPU temperature", "Only the number of users", "Only prompt length"]
+    answer: "Requests, tokens or compute use, latency, errors, and business outcomes"
+    concepts: [agent-cost, observability, outcomes]
+    careops: [V3, V5]
+  - id: CDL-096
+    domain: operations
+    level: intermediate
+    cognitive: apply
+    pattern: disaster-recovery
+    type: multi_select
+    question: "Which elements belong in a recovery plan?"
+    options: ["Recovery objectives", "Backup and restore procedures", "Roles and communication", "A promise that testing is unnecessary"]
+    answer: ["Recovery objectives", "Backup and restore procedures", "Roles and communication"]
+    concepts: [dr, rto, rpo, resilience]
+    careops: [V3, V4]
