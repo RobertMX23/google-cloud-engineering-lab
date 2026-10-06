@@ -1,5 +1,7 @@
 # Guía para contribuir
 
+La arquitectura y distribución obligatorias están definidas en [`REPOSITORY_ARCHITECTURE_CONTRACT.md`](REPOSITORY_ARCHITECTURE_CONTRACT.md). Ese contrato es la fuente de verdad para clasificar recursos, organizar PDFs y publicar cambios.
+
 ## Organización
 
 - Clasifica cada recurso por certificación y área del examen antes de añadirlo.
@@ -21,3 +23,5 @@ Cada lab debe documentar:
 ## Cambios
 
 Prefiere cambios pequeños y verificables. Actualiza el README del área cuando cambie la taxonomía.
+
+Antes de publicar cambios estructurales, compara siempre el estado local con `origin/main`, verifica la estructura resultante y confirma que los hashes local y remoto coincidan después del push.
