@@ -1,0 +1,450 @@
+version: "2026.1"
+title: "Cloud Digital Leader question bank — 2026"
+language: "en"
+purpose: "Canonical study questions for randomized practice; these are representative questions, not exam dumps."
+question_count: 48
+domains:
+  - digital-transformation
+  - data-transformation
+  - artificial-intelligence
+  - modernization
+  - trust-security
+  - operations
+questions:
+  - id: CDL-001
+    domain: digital-transformation
+    level: basic
+    type: single_choice
+    question: "Which business outcome is a primary reason organizations adopt cloud technology?"
+    options: ["Elastic scalability and faster delivery", "Permanent elimination of all risk", "No need for governance", "Unlimited free capacity"]
+    answer: "Elastic scalability and faster delivery"
+    concepts: [scalability, agility, digital-transformation]
+    careops: [V0, V1]
+  - id: CDL-002
+    domain: digital-transformation
+    level: basic
+    type: single_choice
+    question: "What is the main difference between public, private, hybrid, and multicloud?"
+    options: ["Where workloads and providers are deployed", "The programming language used", "Whether data exists", "Whether users need passwords"]
+    answer: "Where workloads and providers are deployed"
+    concepts: [deployment-models, tradeoffs]
+    careops: [V0, V4]
+  - id: CDL-003
+    domain: digital-transformation
+    level: basic
+    type: single_choice
+    question: "Which service model gives the customer the most control over virtual machines?"
+    options: ["IaaS", "PaaS", "SaaS", "Managed endpoint"]
+    answer: "IaaS"
+    concepts: [iaas, paas, saas, shared-responsibility]
+    careops: [V1, V4]
+  - id: CDL-004
+    domain: digital-transformation
+    level: basic
+    type: single_choice
+    question: "Why are regions and zones important in cloud architecture?"
+    options: ["They affect latency, availability, and data residency", "They replace IAM", "They define programming syntax", "They remove the need for backups"]
+    answer: "They affect latency, availability, and data residency"
+    concepts: [regions, zones, latency, availability]
+    careops: [V1, V4]
+  - id: CDL-005
+    domain: digital-transformation
+    level: basic
+    type: single_choice
+    question: "What does DNS primarily provide?"
+    options: ["Name resolution between domains and IP addresses", "Encryption of every database row", "Container orchestration", "Cost forecasting"]
+    answer: "Name resolution between domains and IP addresses"
+    concepts: [dns, networking]
+    careops: [V1, V4]
+  - id: CDL-006
+    domain: digital-transformation
+    level: intermediate
+    type: multi_select
+    question: "Which are common business benefits of cloud technology?"
+    options: ["Elasticity", "Faster experimentation", "Global reach", "Guaranteed zero outages"]
+    answer: ["Elasticity", "Faster experimentation", "Global reach"]
+    concepts: [cloud-value, agility, availability]
+    careops: [V0, V3]
+  - id: CDL-007
+    domain: digital-transformation
+    level: intermediate
+    type: single_choice
+    question: "What is an open standard most useful for?"
+    options: ["Interoperability and reduced vendor lock-in", "Disabling all security controls", "Guaranteeing the lowest price", "Replacing business requirements"]
+    answer: "Interoperability and reduced vendor lock-in"
+    concepts: [open-standards, interoperability]
+    careops: [V4, V5]
+  - id: CDL-008
+    domain: digital-transformation
+    level: intermediate
+    type: single_choice
+    question: "What is the most appropriate first step before selecting a cloud solution?"
+    options: ["Clarify the business problem and measurable outcome", "Choose the most expensive service", "Deploy before discovery", "Start with a model name"]
+    answer: "Clarify the business problem and measurable outcome"
+    concepts: [business-case, requirements, value]
+    careops: [V0]
+
+  - id: CDL-009
+    domain: data-transformation
+    level: basic
+    type: single_choice
+    question: "What is a data warehouse primarily optimized for?"
+    options: ["Analytical queries and reporting", "Replacing every transactional database", "Storing only binary files", "Managing user passwords"]
+    answer: "Analytical queries and reporting"
+    concepts: [data-warehouse, analytics, bi]
+    careops: [V2, V4]
+  - id: CDL-010
+    domain: data-transformation
+    level: basic
+    type: single_choice
+    question: "Which storage is best suited for unstructured objects such as documents and media?"
+    options: ["Cloud Storage", "Cloud SQL", "Spanner", "Memorystore"]
+    answer: "Cloud Storage"
+    concepts: [object-storage, unstructured-data]
+    careops: [V1, V5]
+  - id: CDL-011
+    domain: data-transformation
+    level: basic
+    type: single_choice
+    question: "What is the main purpose of data governance?"
+    options: ["Define ownership, quality, access, and compliance", "Make all data public", "Eliminate metadata", "Avoid retention rules"]
+    answer: "Define ownership, quality, access, and compliance"
+    concepts: [data-governance, compliance, ownership]
+    careops: [V0, V4, V5]
+  - id: CDL-012
+    domain: data-transformation
+    level: intermediate
+    type: single_choice
+    question: "Which product is designed for large-scale analytical SQL?"
+    options: ["BigQuery", "Cloud DNS", "Cloud Armor", "Cloud Run"]
+    answer: "BigQuery"
+    concepts: [bigquery, analytics, sql]
+    careops: [V2, V5]
+  - id: CDL-013
+    domain: data-transformation
+    level: intermediate
+    type: single_choice
+    question: "Which service is commonly used to ingest event streams?"
+    options: ["Pub/Sub", "Cloud KMS", "Cloud Billing", "Cloud NAT"]
+    answer: "Pub/Sub"
+    concepts: [pubsub, streaming, events]
+    careops: [V2]
+  - id: CDL-014
+    domain: data-transformation
+    level: intermediate
+    type: multi_select
+    question: "Which dimensions describe data quality?"
+    options: ["Accuracy", "Completeness", "Timeliness", "Brand color"]
+    answer: ["Accuracy", "Completeness", "Timeliness"]
+    concepts: [data-quality, ai-readiness]
+    careops: [V2, V5]
+  - id: CDL-015
+    domain: data-transformation
+    level: intermediate
+    type: single_choice
+    question: "What is the key difference between a database and a data lake?"
+    options: ["A database supports operational access while a lake stores varied raw data", "A lake can only store SQL tables", "A database cannot be queried", "They are always identical"]
+    answer: "A database supports operational access while a lake stores varied raw data"
+    concepts: [database, data-lake, workloads]
+    careops: [V1, V2, V4]
+  - id: CDL-016
+    domain: data-transformation
+    level: intermediate
+    type: single_choice
+    question: "Why is streaming analytics valuable for an alerting platform?"
+    options: ["It enables decisions from events with low delay", "It removes the need for data quality", "It guarantees every prediction is correct", "It replaces identity controls"]
+    answer: "It enables decisions from events with low delay"
+    concepts: [streaming-analytics, latency, alerts]
+    careops: [V2, V3]
+
+  - id: CDL-017
+    domain: artificial-intelligence
+    level: basic
+    type: single_choice
+    question: "Which statement best distinguishes generative AI from traditional analytics?"
+    options: ["Generative AI creates new content from learned patterns", "Generative AI only counts rows", "Analytics always requires a foundation model", "They have exactly the same purpose"]
+    answer: "Generative AI creates new content from learned patterns"
+    concepts: [ai, ml, generative-ai, analytics]
+    careops: [V0, V5]
+  - id: CDL-018
+    domain: artificial-intelligence
+    level: basic
+    type: single_choice
+    question: "What is agentic AI designed to do beyond generating a single response?"
+    options: ["Plan or execute actions using tools toward a goal", "Only store static files", "Replace all human approvals", "Guarantee deterministic output"]
+    answer: "Plan or execute actions using tools toward a goal"
+    concepts: [agentic-ai, tools, workflows]
+    careops: [V5]
+  - id: CDL-019
+    domain: artificial-intelligence
+    level: intermediate
+    type: single_choice
+    question: "When is a deterministic rule preferable to machine learning?"
+    options: ["When the logic is stable, explicit, and easy to validate", "When no requirements exist", "When data is always incorrect", "When explainability is forbidden"]
+    answer: "When the logic is stable, explicit, and easy to validate"
+    concepts: [rules-vs-ml, explainability, fit-for-purpose]
+    careops: [V2, V5]
+  - id: CDL-020
+    domain: artificial-intelligence
+    level: intermediate
+    type: multi_select
+    question: "Which factors should influence the selection of an AI solution?"
+    options: ["Implementation speed", "Required expertise", "Differentiation", "Whether the name sounds modern"]
+    answer: ["Implementation speed", "Required expertise", "Differentiation"]
+    concepts: [ai-selection, tradeoffs, cost]
+    careops: [V0, V5]
+  - id: CDL-021
+    domain: artificial-intelligence
+    level: intermediate
+    type: single_choice
+    question: "When is a pre-trained API generally the best starting point?"
+    options: ["When a common capability is needed quickly with little custom training", "When a unique proprietary model is mandatory", "When no input data exists", "When latency and cost do not matter"]
+    answer: "When a common capability is needed quickly with little custom training"
+    concepts: [pretrained-api, speed, effort]
+    careops: [V5]
+  - id: CDL-022
+    domain: artificial-intelligence
+    level: intermediate
+    type: single_choice
+    question: "What does BigQuery ML allow a team to do?"
+    options: ["Create and use some ML models with SQL in BigQuery", "Run Kubernetes clusters", "Manage DNS zones", "Encrypt network traffic automatically"]
+    answer: "Create and use some ML models with SQL in BigQuery"
+    concepts: [bigquery-ml, sql, ml]
+    careops: [V2, V5]
+  - id: CDL-023
+    domain: artificial-intelligence
+    level: intermediate
+    type: single_choice
+    question: "What is the role of an agent platform such as Gemini Enterprise Agent Platform?"
+    options: ["Provide capabilities to build, connect, deploy, and govern agents", "Act only as object storage", "Replace all databases", "Remove the need for evaluation"]
+    answer: "Provide capabilities to build, connect, deploy, and govern agents"
+    concepts: [agent-platform, deployment, governance]
+    careops: [V5]
+  - id: CDL-024
+    domain: artificial-intelligence
+    level: intermediate
+    type: multi_select
+    question: "Which controls are appropriate for a production agent?"
+    options: ["Least-privilege tools", "Human approval for high-impact actions", "Evaluation and monitoring", "Unrestricted access to every project"]
+    answer: ["Least-privilege tools", "Human approval for high-impact actions", "Evaluation and monitoring"]
+    concepts: [agent-security, human-in-the-loop, evaluation]
+    careops: [V3, V5]
+
+  - id: CDL-025
+    domain: modernization
+    level: basic
+    type: single_choice
+    question: "What does rehost usually mean?"
+    options: ["Move a workload with minimal code changes", "Rewrite it as a new product", "Delete the workload", "Convert every database to NoSQL"]
+    answer: "Move a workload with minimal code changes"
+    concepts: [migration, rehost, modernization]
+    careops: [V1, V4]
+  - id: CDL-026
+    domain: modernization
+    level: basic
+    type: single_choice
+    question: "What is a container?"
+    options: ["A packaged application and its dependencies", "A physical region", "A billing account", "A DNS record"]
+    answer: "A packaged application and its dependencies"
+    concepts: [containers, portability]
+    careops: [V1, V4]
+  - id: CDL-027
+    domain: modernization
+    level: basic
+    type: single_choice
+    question: "What is a primary benefit of serverless?"
+    options: ["Less infrastructure management and automatic scaling", "Permanent ownership of physical servers", "No operational responsibility", "Unlimited stateful local storage"]
+    answer: "Less infrastructure management and automatic scaling"
+    concepts: [serverless, cloud-run, scaling]
+    careops: [V1]
+  - id: CDL-028
+    domain: modernization
+    level: intermediate
+    type: single_choice
+    question: "What does Kubernetes primarily provide?"
+    options: ["Container orchestration", "Relational database transactions", "Email delivery", "Data classification"]
+    answer: "Container orchestration"
+    concepts: [kubernetes, orchestration, gke]
+    careops: [V4]
+  - id: CDL-029
+    domain: modernization
+    level: intermediate
+    type: single_choice
+    question: "What is the business value of an API?"
+    options: ["Expose reusable capabilities to applications or partners", "Guarantee that data is correct", "Replace all authentication", "Prevent every outage"]
+    answer: "Expose reusable capabilities to applications or partners"
+    concepts: [apis, reuse, integration]
+    careops: [V1, V5]
+  - id: CDL-030
+    domain: modernization
+    level: intermediate
+    type: single_choice
+    question: "What is Apigee primarily used for?"
+    options: ["API management, security, analytics, and monetization", "GPU scheduling", "Object lifecycle management", "Container image compilation only"]
+    answer: "API management, security, analytics, and monetization"
+    concepts: [apigee, api-management]
+    careops: [V4, V5]
+  - id: CDL-031
+    domain: modernization
+    level: intermediate
+    type: single_choice
+    question: "Which workload is a strong fit for Cloud Run?"
+    options: ["A stateless containerized HTTP service", "A bare-metal-only workload", "A database requiring local disk permanence", "A physical network appliance"]
+    answer: "A stateless containerized HTTP service"
+    concepts: [cloud-run, stateless, containers]
+    careops: [V1, V5]
+  - id: CDL-032
+    domain: modernization
+    level: intermediate
+    type: single_choice
+    question: "Why might an organization choose a hybrid or multicloud design?"
+    options: ["Regulatory, latency, resilience, or existing-investment requirements", "To avoid documenting architecture", "To eliminate all network costs", "Because every workload needs multiple clouds"]
+    answer: "Regulatory, latency, resilience, or existing-investment requirements"
+    concepts: [hybrid-cloud, multicloud, tradeoffs]
+    careops: [V4, V5]
+
+  - id: CDL-033
+    domain: trust-security
+    level: basic
+    type: single_choice
+    question: "What is the difference between authentication and authorization?"
+    options: ["Authentication verifies identity; authorization determines permissions", "They are identical", "Authorization verifies identity; authentication sets budgets", "Neither relates to IAM"]
+    answer: "Authentication verifies identity; authorization determines permissions"
+    concepts: [iam, authentication, authorization]
+    careops: [V1, V4, V5]
+  - id: CDL-034
+    domain: trust-security
+    level: basic
+    type: single_choice
+    question: "What does least privilege mean?"
+    options: ["Grant only the access required for the task", "Give every service owner access", "Disable audit logs", "Share one administrator account"]
+    answer: "Grant only the access required for the task"
+    concepts: [least-privilege, iam, zero-trust]
+    careops: [V1, V5]
+  - id: CDL-035
+    domain: trust-security
+    level: basic
+    type: multi_select
+    question: "Which are common cloud security threats?"
+    options: ["Phishing", "Ransomware", "Misconfiguration", "Automatic compliance"]
+    answer: ["Phishing", "Ransomware", "Misconfiguration"]
+    concepts: [threats, risk]
+    careops: [V3, V5]
+  - id: CDL-036
+    domain: trust-security
+    level: intermediate
+    type: single_choice
+    question: "What does encryption in transit protect?"
+    options: ["Data moving between systems", "Only deleted data", "Only user roles", "Cloud billing records exclusively"]
+    answer: "Data moving between systems"
+    concepts: [encryption, transit, confidentiality]
+    careops: [V1, V4]
+  - id: CDL-037
+    domain: trust-security
+    level: intermediate
+    type: single_choice
+    question: "What is the shared responsibility model?"
+    options: ["The provider and customer have different security responsibilities", "The provider handles every customer decision", "The customer owns all physical data centers", "Security is optional in managed services"]
+    answer: "The provider and customer have different security responsibilities"
+    concepts: [shared-responsibility, security]
+    careops: [V0, V4]
+  - id: CDL-038
+    domain: trust-security
+    level: intermediate
+    type: single_choice
+    question: "What is Model Armor intended to help address?"
+    options: ["Security risks involving generative AI inputs and outputs", "Cloud SQL backups only", "DNS propagation", "GPU hardware replacement"]
+    answer: "Security risks involving generative AI inputs and outputs"
+    concepts: [model-armor, genai-security, prompt-injection]
+    careops: [V5]
+  - id: CDL-039
+    domain: trust-security
+    level: intermediate
+    type: multi_select
+    question: "Which controls help secure an AI agent?"
+    options: ["Tool allowlists", "Input and output validation", "Audit trails", "Unrestricted service-account keys"]
+    answer: ["Tool allowlists", "Input and output validation", "Audit trails"]
+    concepts: [agent-security, audit, validation]
+    careops: [V3, V5]
+  - id: CDL-040
+    domain: trust-security
+    level: intermediate
+    type: single_choice
+    question: "What is a benefit of defense in depth?"
+    options: ["Multiple independent controls reduce the impact of one failed control", "One password protects every layer", "It eliminates the need for monitoring", "It guarantees no attack can succeed"]
+    answer: "Multiple independent controls reduce the impact of one failed control"
+    concepts: [defense-in-depth, resilience]
+    careops: [V3, V4]
+
+  - id: CDL-041
+    domain: operations
+    level: basic
+    type: single_choice
+    question: "What is the typical cloud financial shift from CapEx to OpEx?"
+    options: ["From upfront infrastructure investment toward usage-based operating spend", "From monthly use to owning every data center", "From budgets to no governance", "From variable cost to guaranteed zero cost"]
+    answer: "From upfront infrastructure investment toward usage-based operating spend"
+    concepts: [capex, opex, tco, finops]
+    careops: [V0, V4]
+  - id: CDL-042
+    domain: operations
+    level: basic
+    type: single_choice
+    question: "What is the purpose of a cloud budget?"
+    options: ["Monitor expected spend and trigger alerts", "Stop every service automatically by default", "Replace IAM", "Guarantee a fixed invoice"]
+    answer: "Monitor expected spend and trigger alerts"
+    concepts: [budgets, billing, governance]
+    careops: [V1, V4]
+  - id: CDL-043
+    domain: operations
+    level: basic
+    type: single_choice
+    question: "What does Cloud Monitoring primarily provide?"
+    options: ["Metrics, dashboards, and alerting", "Source-code version control", "Relational schema migration only", "Identity proofing"]
+    answer: "Metrics, dashboards, and alerting"
+    concepts: [monitoring, observability]
+    careops: [V3]
+  - id: CDL-044
+    domain: operations
+    level: basic
+    type: multi_select
+    question: "Which are the four golden signals commonly used in SRE?"
+    options: ["Latency", "Traffic", "Errors", "Saturation"]
+    answer: ["Latency", "Traffic", "Errors", "Saturation"]
+    concepts: [sre, golden-signals, observability]
+    careops: [V3]
+  - id: CDL-045
+    domain: operations
+    level: intermediate
+    type: single_choice
+    question: "What is an SLO?"
+    options: ["A target for a service-level indicator", "A legal invoice", "A database index", "A deployment region"]
+    answer: "A target for a service-level indicator"
+    concepts: [sli, slo, sla]
+    careops: [V3, V4]
+  - id: CDL-046
+    domain: operations
+    level: intermediate
+    type: single_choice
+    question: "Why are backups and replication used?"
+    options: ["To improve recovery and availability when failures occur", "To eliminate testing", "To guarantee zero data loss in every design", "To replace access control"]
+    answer: "To improve recovery and availability when failures occur"
+    concepts: [backup, replication, dr, resilience]
+    careops: [V3, V4]
+  - id: CDL-047
+    domain: operations
+    level: intermediate
+    type: single_choice
+    question: "What is a useful operational characteristic of an agent in production?"
+    options: ["Its actions, latency, errors, cost, and outcomes can be observed", "It cannot be tested", "It must have administrator access", "Its outputs never need review"]
+    answer: "Its actions, latency, errors, cost, and outcomes can be observed"
+    concepts: [agent-observability, operations, evaluation]
+    careops: [V3, V5]
+  - id: CDL-048
+    domain: operations
+    level: intermediate
+    type: single_choice
+    question: "What should be evaluated before enabling an agent to perform a high-impact action?"
+    options: ["Risk, authorization, evidence, rollback, and human approval", "Only the model brand", "Only the prompt length", "Whether the action is fast"]
+    answer: "Risk, authorization, evidence, rollback, and human approval"
+    concepts: [agent-governance, risk, approval, rollback]
+    careops: [V3, V5]
