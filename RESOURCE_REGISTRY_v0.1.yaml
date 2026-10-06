@@ -384,6 +384,50 @@ resources:
     resource_status: ACTIVE
     execution_status: NOT_STARTED
 
+  - id: pca-adk-foundation
+    certification: PCA
+    exam_section: managing-provisioning-infrastructure
+    priority: P1
+    resource_type: codelab
+    name: Building AI Agents with ADK: The Foundation
+    url: https://codelabs.developers.google.com/devsite/codelabs/build-agents-with-adk-foundation
+    repo_path: 03-professional-cloud-architect/02-managing-provisioning-infrastructure/agent-platform-ml-workflows/adk-foundation/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: pca-adk-travel-agent-gemini-cli
+    certification: PCA
+    exam_section: managing-provisioning-infrastructure
+    priority: P1
+    resource_type: codelab
+    name: Building a Simple Travel Agent with ADK and Gemini CLI
+    url: https://codelabs.developers.google.com/codelabs/build-a-simple-travel-agent-with-adk-and-gemini-cli
+    repo_path: 03-professional-cloud-architect/02-managing-provisioning-infrastructure/agent-platform-ml-workflows/adk-travel-agent/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: pca-adk-tools-agent-cloud-run
+    certification: PCA
+    exam_section: managing-provisioning-infrastructure
+    priority: P1
+    resource_type: codelab
+    name: Herramientas para crear un agente: De cero a asistente con el ADK
+    url: https://codelabs.developers.google.com/codelabs/cloud-run/tools-make-an-agent?hl=es-419
+    repo_path: 03-professional-cloud-architect/02-managing-provisioning-infrastructure/agent-platform-ml-workflows/adk-tools-cloud-run/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
+  - id: pca-mcp-server-cloud-run-adk-agent
+    certification: PCA
+    exam_section: managing-provisioning-infrastructure
+    priority: P1
+    resource_type: codelab
+    name: Use an MCP Server on Cloud Run with an ADK Agent
+    url: https://codelabs.developers.google.com/codelabs/cloud-run/use-mcp-server-on-cloud-run-with-an-adk-agent?hl=es
+    repo_path: 03-professional-cloud-architect/02-managing-provisioning-infrastructure/agent-platform-ml-workflows/mcp-cloud-run-adk-agent/
+    resource_status: ACTIVE
+    execution_status: NOT_STARTED
+
 governance:
   canonicality_order:
     - exam-blueprint
