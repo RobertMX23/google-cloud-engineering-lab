@@ -198,3 +198,9 @@ shared/
     ├── security/
     └── evidence/
 ~~~
+
+## Skill de levantamiento
+
+El levantamiento de funciones y especificaciones se ejecuta con el skill versionado en [`skills/careops-requirements-discovery/SKILL.md`](skills/careops-requirements-discovery/SKILL.md). Su banco de preguntas está en [`skills/careops-requirements-discovery/references/question-bank.md`](skills/careops-requirements-discovery/references/question-bank.md).
+
+El skill exige cerrar las preguntas MUST de cada fase, convertir respuestas en requisitos, contratos de datos/eventos, ADRs y criterios de aceptación, y separar decisiones confirmadas de supuestos y preguntas abiertas.
